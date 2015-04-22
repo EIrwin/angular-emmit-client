@@ -1,0 +1,25 @@
+{
+  "name": "angular-emmit-client",
+  "version": "0.0.0",
+  "homepage": "https://github.com/eirwin/angular-emmit-client",
+  "authors": [
+    "Eric Irwin <Eric.Irwin1124@gmail.com>"
+  ],
+  "description": "AnguarJS client for Emmit",
+  "main": "emmit-client.js",
+  "keywords": [
+    "Emmit",
+    "Emmit-Client"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies":{
+    "angular":"*"
+  }
+}
