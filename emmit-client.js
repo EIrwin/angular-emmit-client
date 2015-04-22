@@ -1,5 +1,5 @@
 angular.module('eirwin.emmit-client',['SignalR']).
-.service('Emmit',['$rootScope','Hub','$log','$timeout',function($rootScope,Hub,$log,$timeout){
+service('Emmit',['$rootScope','Hub','$log','$timeout',function($rootScope,Hub,$log,$timeout){
 
    var createProxy = function(config){
        var hub = new Hub(config.emitter,{
