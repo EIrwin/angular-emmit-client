@@ -19,7 +19,8 @@
     "test",
     "tests"
   ],
-  "dependencies":{
-    "angular":"*"
+  "dependencies": {
+    "angular": "*",
+    "angular-signalr-hub": "~1.4.1"
   }
 }
