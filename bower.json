@@ -20,6 +20,7 @@
     "tests"
   ],
   "dependencies": {
-    "angular-signalr-hub": "~1.4.1"
+    "angular-signalr-hub": "~1.4.1",
+    "q": "~2.0.2"
   }
 }

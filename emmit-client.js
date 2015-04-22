@@ -1,5 +1,5 @@
-angular.module('EmmitClient',['SignalR']).
-service('Emmit',['$rootScope','Hub','$log','$timeout',function($rootScope,Hub,$log,$timeout){
+angular.module('EmmitClient',['SignalR','$q']).
+service('Emmit',['$rootScope','Hub','$log','$timeout','$q',function($rootScope,Hub,$log,$timeout,$q){
 
    var createProxy = function(config){
        var hub = new Hub(config.emitter,{
