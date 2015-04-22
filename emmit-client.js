@@ -15,4 +15,4 @@ angular.module('eirwin.emmit-client',['SignalR']).
     return {
         createProxy:createProxy
     }
-});
+}]);
