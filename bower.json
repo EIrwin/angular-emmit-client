@@ -1,11 +1,11 @@
 {
   "name": "angular-emmit-client",
-  "version": "0.0.0",
+  "version": "0.0.3",
   "homepage": "https://github.com/eirwin/angular-emmit-client",
   "authors": [
     "Eric Irwin <Eric.Irwin1124@gmail.com>"
   ],
-  "description": "AnguarJS client for Emmit",
+  "description": "AngularJS client for Emmit",
   "main": "emmit-client.js",
   "keywords": [
     "Emmit",
@@ -20,7 +20,6 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "*",
     "angular-signalr-hub": "~1.4.1"
   }
 }
