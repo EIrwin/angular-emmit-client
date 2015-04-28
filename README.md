@@ -10,12 +10,13 @@ An AngularJS client for [Emmit](https://github.com/EIrwin/Emmit) that wraps [ang
 
 ##Usage
 
-1. Include the `emmit-client.js` script provided by this component into your app
-2. Add `EmmitClient` as a module dependency to your app
+1. Include the `emmit-client.js` script provided by this component into your app.
+2. Include the `angular-signalr-hub.js` script provided by the `angular-signalr-hub` component into your app.
+3. Add `EmmitClient` as a module dependency to your app
 ```javascript
     var myApp = angular.module('myApp',['EmmitClient']);
 ```    
-3. Use Emmit to create a proxy to your Emmit server.
+4. Use Emmit to create a proxy to your Emmit server.
 ```javascript
    myApp.controller('myController',['$scope','Emmit','$log'],function($scope,Emmit,$log){
       Emmit.createProxy({
