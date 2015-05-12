@@ -18,27 +18,25 @@ An AngularJS client for [Emmit](https://github.com/EIrwin/Emmit) that wraps [ang
 ```    
 4. Use Emmit to create a proxy to your Emmit server.
 ```javascript
-   myApp.controller('myController',['$scope','Emmit','$log'],function($scope,Emmit,$log){
+   myApp.controller('myController',['Emmit'],function(Emmit){
       Emmit.createProxy({
             emitter:'myEmitter',
             path:'http://localhost:8181/emmit',
             listeners:{
                 'onSendNotification':function(notification){
-                    //do something with notification received from server
-                    $scope.$emit('onSendNotification',notification);
+                    //do something with 'notification' received from server
                 }
             },
             onError:function(){
-                $log.error('onError:');
+                //an error occured
             },
             onDisconnected:function(){
-                $log.info('onDisconnected:')
+                //proxy was disconnected
             },
             queryParams:{
                 userId:'12345'  //optional
             }
-        }).then(function(proxy){
-            $log.info('proxy created');
+        }).then(function(newProxy){
             //Do something here with the proxy if you need
         });
    }
